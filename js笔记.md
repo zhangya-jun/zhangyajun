@@ -54,13 +54,13 @@ JavaScript的语言是一种编程语言，可以向计算机发出指令，具�
 (数杠)|逻辑或
 !|逻辑非
 ##### 逻辑与（&&）
-第一个表达式为false直接返回false
-第一个表达式是true,第二个为false,返回false
-第一个表达式是true,第二个也是true,返回true
+第一个表达式为false直接返回false<br>
+第一个表达式是true,第二个为false,返回false<br>
+第一个表达式是true,第二个也是true,返回true<br>
 ##### 逻辑或（||）
-第一个表达式为false,第二个也是false，则返回false
-第一个表达式是true，直接返回true
-第一个表达式是false,第二个也是true,返回true
+第一个表达式为false,第二个也是false，则返回false<br>
+第一个表达式是true，直接返回true<br>
+第一个表达式是false,第二个也是true,返回true<br>
 ##### 逻辑非(!)
 非真为假
 非假为真
@@ -73,10 +73,10 @@ JavaScript的语言是一种编程语言，可以向计算机发出指令，具�
 *=|乘并赋值
 /=|除并赋值
 
-x += y  同x = x + y
-x -= y  同x = x - y
-x *= y  同x = x * y
-x /= y  同x = x / y
+x += y  同x = x + y<br>
+x -= y  同x = x - y<br>
+x *= y  同x = x * y<br>
+x /= y  同x = x / y<br>
 ### 条件语句
 ##### if语句
 1. if语句是最基本的条件控制语句，它让JavaScript程序可以选择执行顺序，我们可以通过一个布尔值来控制一行语句是否执行
@@ -138,9 +138,9 @@ fun();调用函数
 3. prompt也可以像用户显示一条消息，等待用户输入字符串后，返回这个字符串，如果用户点击取消，则返回null
 ### DOM基础
 1. DOM的基本概念
-> 文档对象模型
-> 定义了树状结构
-> 定义了接口，可以用来操作树状结构
+> 文档对象模型<br>
+> 定义了树状结构<br>
+> 定义了接口，可以用来操作树状结构<br>
 2. 操作样式：我们可以通过DOM提供的querySelector方法来获取元素，然后进一步操作它的样式
 若需要通过js设置多个元素的样式，可以使用querySelectorAll方法
 3. 绑定事件：事件就是文档或者浏览器窗口发生的一些特定的交互瞬间
@@ -149,9 +149,9 @@ fun();调用函数
 我们还可以通过赋值的方式为一个元素设置属性
 ### DOM操作
 1. 节点的分类
-> 元素节点
-> 属性节点
-> 文本节点 
+> 元素节点<br>
+> 属性节点<br>
+> 文本节点 <br>
 2. 文本节点：createTextNode方法可以创建一个文本节点，appendChild方法可以将textNode节点添加到h1标签中。
 设置h1的文本节点，innerHTML的内容会完全覆盖原节点的内容。
 第一种方法需要创建文本节点，然后通过appendChild方法将节点追加到之前文本内容的后面，第二种方法则是直接用innerHTML覆盖之前文本节点的内容。
@@ -182,28 +182,28 @@ javascript为我们提供了很多内置对象，这些内置对象为我们提�
 ##### Math
 1. Math对象不像数组那样需要我们手动去创建，我们在JavaScript程序中直接写Math代表的就是Math对象。我们可以通过Math对象直接获取圆周率
 2. Math对象提供了很多方法来简化我们的数学运算，下面简单列举几个方法
-> Math.floor(pi):向下取整
-> Math.ceil(pi):向上取整
-> Math.round(pi):四舍五入
-> Math.abs(-pi):获取绝对值
-> Math.random():获取0~1之间的随机数
+> Math.floor(pi):向下取整<br>
+> Math.ceil(pi):向上取整<br>
+> Math.round(pi):四舍五入<br>
+> Math.abs(-pi):获取绝对值<br>
+> Math.random():获取0~1之间的随机数<br>
 3. 在Math对象的方法中，floor和random两个方法比较常用，我们可以通过这两个方法获取我们想要的随机数范围
 ##### Date
 1. Date对象是JavaScript用于处理日期和时间的对象，我们可以通过Date对象获取当前的时间，需要说明的是Date对象获取的时间是本机的时间 
-> var year = dateNow.getFullYear();    //获取年，不能用getYear()方法，此方法已经被废弃
-> var month = dateNow.getMonth();      //获取月份 从0开始，一月份返回的值是0
-> var date = dateNow.getDate();        //获取日期
-> var hours = dateNow.getHours();      //获取小时
-> var minutes = dateNow.getMinutes();  //获取分钟
-> var seconds = dateNow.getSeconds();  //获取秒
-> var day = dateNow.getDay();          //获取星期
+> var year = dateNow.getFullYear();    //获取年，不能用getYear()方法，此方法已经被废弃<br>
+> var month = dateNow.getMonth();      //获取月份 从0开始，一月份返回的值是0<br>
+> var date = dateNow.getDate();        //获取日期<br>
+> var hours = dateNow.getHours();      //获取小时<br>
+> var minutes = dateNow.getMinutes();  //获取分钟<br>
+> var seconds = dateNow.getSeconds();  //获取秒<br>
+> var day = dateNow.getDay();          //获取星期<br>
 2. 我们在编写程序的时候，有的时候会希望获取一个唯一的时间点，我们可以使用getTime方法或得。
 3. 通过getTime方法可以获取时间戳，时间戳是指格林威治时间1970年01月01日00时00分00秒(北京时间1970年01月01日08时00分00秒)起至现在的总毫秒数，我们可以用时间戳表示一个不会重复的时间点
 ### 正则表达式语法
 1. 正则表达式用于匹配字符串
 2. 正则表达式语法
-> 设定匹配范围 正则表达式可以通过[]设定匹配的范围
-> 匹配数字 正则表达式可以在匹配范围中定义[0-9]来设定匹配数字
-> 匹配字母 正则表达式可以在匹配范围中定义[a-z]来设定匹配字母
-> 匹配多位 上面的匹配内容匹配的都是一位数字或字母，我们可以通过+来指定匹配多位
-> 匹配指定位数 有的时候我们需要匹配指定位数的字符，可以通过{}指定匹配的位数
+> 设定匹配范围 正则表达式可以通过[]设定匹配的范围<br>
+> 匹配数字 正则表达式可以在匹配范围中定义[0-9]来设定匹配数字<br>
+> 匹配字母 正则表达式可以在匹配范围中定义[a-z]来设定匹配字母<br>
+> 匹配多位 上面的匹配内容匹配的都是一位数字或字母，我们可以通过+来指定匹配多位<br>
+> 匹配指定位数 有的时候我们需要匹配指定位数的字符，可以通过{}指定匹配的位数<br>
